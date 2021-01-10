@@ -121,6 +121,36 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &20177496
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 20177497}
+  m_Layer: 0
+  m_Name: AttackPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &20177497
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20177496}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.73, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2075642075}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &80282683
 GameObject:
   m_ObjectHideFlags: 0
@@ -171,7 +201,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 5111d66cff4af484daeb425fc9a0c85c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4264,5 +4294,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7015431179733001332, guid: 7fe3bbc1762a3364f936af2abb6d1485,
+        type: 3}
+      propertyPath: startTimeBtwAttack
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7015431179733001332, guid: 7fe3bbc1762a3364f936af2abb6d1485,
+        type: 3}
+      propertyPath: attackPos
+      value: 
+      objectReference: {fileID: 20177497}
+    - target: {fileID: 7015431179733001332, guid: 7fe3bbc1762a3364f936af2abb6d1485,
+        type: 3}
+      propertyPath: attackRange
+      value: 0.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 7015431179733001332, guid: 7fe3bbc1762a3364f936af2abb6d1485,
+        type: 3}
+      propertyPath: damage
+      value: 99
+      objectReference: {fileID: 0}
+    - target: {fileID: 7015431179733001332, guid: 7fe3bbc1762a3364f936af2abb6d1485,
+        type: 3}
+      propertyPath: whatIsEnemies.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fe3bbc1762a3364f936af2abb6d1485, type: 3}
+--- !u!4 &2075642075 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6193987312653716504, guid: 7fe3bbc1762a3364f936af2abb6d1485,
+    type: 3}
+  m_PrefabInstance: {fileID: 1817891376}
+  m_PrefabAsset: {fileID: 0}
